@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useState} from 'react';
+import { Route, Routes } from 'react-router-dom';
+import DesktopAside from './components/DesktopAside';
+import Home from './components/Home';
+import './styles/App.css';
 
-function App() {
+const App = () => {
+  const [darkmode , setDarkmode] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${darkmode && "darkmode"}`}>
+      <DesktopAside setDarkmode={setDarkmode} darkmode={darkmode} />
+        <Routes>
+            <Route path="/"  element={<Home />}  />
+            <Route path="/*" element={<Home />}  />
+
+        </Routes>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,10 @@
+
+
+.app{
+    background-color: rgb(245,245,245);
+    font-family: 'vazirmatn';
+    transition: all 0.2s;
+}
+.darkmode{
+    background-color: rgb(20, 20, 20);
+}
