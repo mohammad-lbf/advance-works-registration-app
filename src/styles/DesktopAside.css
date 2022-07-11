@@ -5,7 +5,7 @@
     border-radius: 10px;
     top:5px;
     right: 5px;
-    height: calc(100% - 10px);
+    height: calc(100vh - 10px);
     border: 1px solid rgb(224, 224, 224);
     transition: all 0.2s;
 }
@@ -28,6 +28,9 @@ align-items: center;
 border-radius: 10px;
 cursor: pointer;
 transition: all 0.3s;
+}
+.copy-right{
+    color: rgb(97, 97, 97);
 }
 .desktop-aside-option:hover{
     background-color: rgb(243, 243, 243);
@@ -68,6 +71,9 @@ transition: all 0.3s;
 }
 .darkmode .darkmode-option{
     color: rgb(240, 240, 240);
+}
+.darkmode .copy-right{
+    color: rgb(209, 209, 209) ;
 }
 @media (min-width:1350px){
     .aside{

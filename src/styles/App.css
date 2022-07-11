@@ -2,6 +2,11 @@
     background-color: rgb(245,245,245);
     font-family: 'vazirmatn';
     transition: all 0.2s;
+    /* min-height: 100vh; */
+    /* position: fixed; */
+    width: 100%;
+    /* top: 0; */
+    margin: 0 !important;
 }
 .darkmode{
     background-color: rgb(20, 20, 20);

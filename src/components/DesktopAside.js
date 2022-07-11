@@ -46,7 +46,12 @@ const DesktopAside = ({setDarkmode , darkmode}) => {
                  <input className="form-check-input" onChange={()=>setDarkmode(!darkmode)} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                </div>
                <p className="mb-0">حالت تیره</p>
-            </div>    
+            </div>  
+            <div className="text-center mt-5 border p-3 rounded copy-right">
+                :توسعه داده شده توسط
+                <br/>
+                محمد لبافی
+            </div>  
         </aside>
     );
 };
