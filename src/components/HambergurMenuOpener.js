@@ -21,7 +21,7 @@ div{
     transition: all 0.3s linear;
     width:1.5rem;
     height:0.2rem;
-    background-color: #0d6efd ;
+    background-color:${props => props.open ? "#fff" : "#3d6efd"};
     border-radius:5px;
     transform-origin:1px;
     &:nth-child(1){
@@ -50,7 +50,8 @@ const HambergurMenuOpener = (props) => {
             <div></div>
             <div></div>
         </Div>
-        <HambergurMenu open={props.open} darkmode={props.darkmode} />
+        <HambergurMenu open={props.open} darkmode={props.darkmode} setDarkmode={props.setDarkmode} />
+        
         </>
     );
 };

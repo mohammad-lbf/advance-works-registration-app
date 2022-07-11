@@ -2,7 +2,10 @@
     width: 74%;
     background-color: #fff;
     margin-top: 70px;
-    height: 20000px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    min-height: calc(100vh - 90px);
+
     
 }
 

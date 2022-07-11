@@ -1,5 +1,5 @@
 .aside{
-    background-color: #fff;
+    background-color: #324376;
     width: 25%;
     position: fixed;
     border-radius: 10px;
@@ -16,7 +16,7 @@ margin: 10px 0;
 width: 100%;
 }
 .aside a p{
-    color: #000;
+    color: rgb(243, 243, 243);
     margin-right: 5px;
 }
 .desktop-aside-option{
@@ -30,10 +30,13 @@ cursor: pointer;
 transition: all 0.3s;
 }
 .copy-right{
-    color: rgb(97, 97, 97);
+    color: rgb(243, 243, 243);
 }
 .desktop-aside-option:hover{
     background-color: rgb(243, 243, 243);
+}
+.desktop-aside-option:hover p{
+    color: #324376;
 }
 .desktop-aside-option .todo-num{
     background-color: rgb(230, 230, 230);
@@ -50,6 +53,7 @@ transition: all 0.3s;
     padding: 10px 12px;
     align-items: center;
     margin: 10px 0;
+    color: rgb(243, 243, 243);
     
 }
 /* darkmode styles */
