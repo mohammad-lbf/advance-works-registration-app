@@ -2,7 +2,7 @@
     background-color: rgb(231, 231, 231);
     font-family: 'vazirmatn';
     transition: all 0.2s;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     /* position: fixed; */
     width: 100%;
     /* top: 0; */
