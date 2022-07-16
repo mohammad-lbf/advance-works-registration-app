@@ -25,7 +25,7 @@ transform: ${props => props.open ? "translateX(0)" : "translateX(100%)"};
 
 const HambergurMenu = (props) => {
     return (
-        <Div className="d-flex d-xl-none flex-column pt-5" open={props.open} darkmode={props.darkmode}>
+         <Div className="d-flex d-xl-none flex-column pt-5" open={props.open} darkmode={props.darkmode}>
             <HambergurMenuContainer darkmode={props.darkmode} setDarkmode={props.setDarkmode} />
         </Div>
     );
