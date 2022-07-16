@@ -46,16 +46,19 @@ const HambergurMenuContainer = ({darkmode , setDarkmode}) => {
                 <p className="mb-0 ham-todo-num">{unDoneWorksFilter.length}</p>
             </div> 
             </Link>
+            <Link to="/projectdetailes">
+            <div className="d-flex ham-menu-option flex-row-reverse">
+                <div className="d-flex flex-row-reverse">
+                <i class="bi bi-info-circle text-warning"></i>
+                <p className="mb-0">جزئیات پروژه</p>
+                </div>
+            </div> 
+            </Link>
             <div className="d-flex darkmode-option">
                <div className="form-check form-switch ">
                  <input className="form-check-input" checked={darkmode ? true : false} onChange={()=>setDarkmode(!darkmode)} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                </div>
                <p className="mb-0">حالت تیره</p>
-            </div>  
-            <div className="text-center mt-5 border p-3 rounded ham-copy-right">
-                :توسعه داده شده توسط
-                <br/>
-                محمد لبافی
             </div>  
         </aside>
         </div>

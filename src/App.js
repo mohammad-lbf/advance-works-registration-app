@@ -13,6 +13,9 @@ import TodayWorks from './components/TodayWorks';
 import DoneWorks from './components/ِDoneWorks';
 import UnDoneWorks from './components/UnDoneWoks';
 import HambergurMenuModal from './components/HambergurMenuModal';
+import Footer from './components/Footer';
+import ProjectDetailes from './components/ProjectDetailes';
+import AboutDeveloper from './components/AboutDeveloper';
 
 const App = () => {
   const [darkmode , setDarkmode] = useState(false);
@@ -32,7 +35,8 @@ const App = () => {
       <DesktopAside setDarkmode={setDarkmode} darkmode={darkmode} />
       <Header open={open} setOpen={setOpen} darkmode={darkmode} setDarkmode={setDarkmode} />
       <HambergurMenuModal open={open} setOpen={setOpen} />
-        <Routes>
+      <div className="d-flex flex-column w-100 align-items-center align-items-xl-start ms-xl-2">
+      <Routes>
             <Route path="/"        element={<Home />}  />
             <Route path="/*"       element={<Home />}  />
             <Route path="/addwork" element={<Form />}  />
@@ -40,7 +44,11 @@ const App = () => {
             <Route path="/today"   element={<TodayWorks/>}/>
             <Route path="/done"   element={<DoneWorks />}/>
             <Route path="/undone"   element={<UnDoneWorks />}/>
+            <Route path="/projectdetailes"   element={<ProjectDetailes />}/>
+            <Route path="/aboutdeveloper"   element={<AboutDeveloper />}/>
         </Routes>
+        <Footer />
+      </div>
     </div>
       </FilterWorksContextProvider>
     </WorksContextProvider>

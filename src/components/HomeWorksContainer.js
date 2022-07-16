@@ -8,7 +8,7 @@ const HomeWorksContainer = () => {
         <>
         {worksState.worksCounter ? 
         <div>
-        <div className="container px-lg-5 my-4">
+        <div className="container px-lg-5 mt-4">
             <div className="fs-3 text-center mb-5">همه کار ها</div>
             <div className="row justify-content-between flex-row-reverse">
             {worksState.works.map(work =>

@@ -45,6 +45,14 @@ const DesktopAside = ({setDarkmode , darkmode}) => {
                 <p className="mb-0 todo-num">{unDoneWorksFilter.length}</p>
             </div> 
             </Link>
+            <Link to="/projectdetailes">
+            <div className="d-flex desktop-aside-option flex-row-reverse">
+                <div className="d-flex flex-row-reverse">
+                <i class="bi bi-info-circle text-warning"></i>
+                <p className="mb-0">جزئیات پروژه</p>
+                </div>
+            </div> 
+            </Link>
             <div className="d-flex darkmode-option">
                <div className="form-check form-switch ">
                  <input className="form-check-input" checked={darkmode ? true : false} onChange={()=>setDarkmode(!darkmode)} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
@@ -52,9 +60,10 @@ const DesktopAside = ({setDarkmode , darkmode}) => {
                <p className="mb-0">حالت تیره</p>
             </div>  
             <div className="text-center mt-5 border p-3 rounded copy-right">
-                :توسعه داده شده توسط
-                <br/>
-                محمد لبافی
+                <p className="mb-1">:طراح و توسعه دهنده</p>
+                
+                <p className="mb-1">محمد لبافی</p>
+                <Link className="btn btn-primary mb-0" to="/aboutdeveloper">درباره توسعه دهنده</Link>
             </div>  
         </aside>
     );

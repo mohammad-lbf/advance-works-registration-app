@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .app{
     background-color: rgb(231, 231, 231);
     font-family: 'vazirmatn';
@@ -10,4 +30,9 @@
 }
 .darkmode{
     background-color: rgb(20, 20, 20);
+}
+@media (max-width: 400px){
+    .app{
+        font-size: 14px;
+    }
 }
